@@ -1,0 +1,209 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.devteam-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.devteam-text-center {
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+/* Header Styles */
+h1.devteam-text-center {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h1.devteam-text-center:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #3498db, #9b59b6);
+    border-radius: 2px;
+}
+
+/* Section Styles */
+.devteam-section {
+    padding: 40px 0;
+}
+
+.devteam-section h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.devteam-section h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #3498db, #9b59b6);
+    border-radius: 2px;
+}
+
+/* Card Styles */
+.devteam-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.devteam-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.devteam-card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.devteam-card:hover .devteam-card-img-top {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.devteam-card-body {
+    padding: 25px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.devteam-card-title {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.devteam-card-text {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+/* Social Links Styles */
+.devteam-social-links {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.devteam-social-links .btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    padding: 0;
+}
+
+.devteam-social-links .btn:hover {
+    transform: translateY(-3px);
+}
+
+.devteam-social-links .btn:nth-child(1) {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    border: none;
+}
+
+.devteam-social-links .btn:nth-child(2) {
+    background: #333;
+    border: none;
+}
+
+.devteam-social-links .btn:nth-child(3) {
+    background: #0077B5;
+    border: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1.devteam-text-center {
+        font-size: 2rem;
+    }
+    
+    .devteam-section h1 {
+        font-size: 1.6rem;
+    }
+    
+    .devteam-card-img-top {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .devteam-card-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.devteam-card {
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+/* Delay animations for each card */
+.devteam-card:nth-child(1) { animation-delay: 0.1s; }
+.devteam-card:nth-child(2) { animation-delay: 0.2s; }
+.devteam-card:nth-child(3) { animation-delay: 0.3s; }
+.devteam-card:nth-child(4) { animation-delay: 0.4s; }
+.devteam-card:nth-child(5) { animation-delay: 0.5s; }
+.devteam-card:nth-child(6) { animation-delay: 0.6s; }
+.devteam-card:nth-child(7) { animation-delay: 0.7s; }
+
+/* Background Pattern */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 10% 20%, rgba(52, 152, 219, 0.05) 0%, rgba(155, 89, 182, 0.05) 90%);
+    z-index: -1;
+}

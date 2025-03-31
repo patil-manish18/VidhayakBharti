@@ -1,0 +1,238 @@
+.carousel-item img {
+    height: 60vh;
+    object-fit: contain;
+}
+
+.card-header {
+    font-size: 1.4rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #f8f9fa;
+}
+
+.card-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.1rem;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+
+.vision-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px; /* Adjust the minimum height to make the box smaller */
+    margin-top: 20px;
+    background-color: #0a0674;
+    /* background-color: #B21031; */
+    color: white;
+}
+
+.vision-card .col {
+    text-align: center;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.mission-section {
+    margin-top: 20px;
+}
+
+.mission-card {
+    margin: 20px 0;
+}
+
+.mission-card-item {
+    max-width: 18rem;
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+
+/* Add responsive styles for mission cards */
+@media (max-width: 576px) {
+    .mission-card .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission-card-item {
+        width: 100%;
+        max-width: none;
+    }
+
+    
+
+}
+
+.circle {
+    width: 180px; /* Increased width */
+    height: 180px; /* Increased height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 1rem; /* Increased font size */
+    padding: 15px; /* Added padding */
+    word-wrap: break-word;
+}
+
+.bg-circle-1 {
+    background-color:  #0a0674; /* Blue */
+}
+
+.bg-circle-2 {
+    background-color: #0a0674; /* Green */
+}
+
+.bg-circle-3 {
+    background-color:  #0a0674; /* Yellow */
+}
+
+.bg-circle-4 {
+    background-color: #0a0674; /* Red */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .circle {
+        width: 140px; /* Adjusted width for smaller screens */
+        height: 140px; /* Adjusted height for smaller screens */
+        font-size: 0.9rem; /* Adjusted font size for smaller screens */
+    }
+}
+
+h2 {
+    font-family: 'Arial', sans-serif; /* Changed font family */
+    font-size: 2rem; /* Adjusted font size */
+    font-weight: bold; /* Made the font bold */
+    color: #333; /* Darker color for the heading */
+}
+
+.what-we-do-heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+.what-we-do-paragraph {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+.what-we-do-card {
+    margin: 10px;
+    width: 26rem; 
+    justify-content: center;
+    text-align: center;
+}
+.card-body {
+    text-align: center;
+}
+
+/* How Do We Do It Section */
+.how-do-we-do-it {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the section */
+}
+
+@media only screen and (max-width: 575px) {
+    .how-do-we-do-it {
+        width: 95%; /* Reduce width for smaller screens */
+    }
+}
+
+.how-do-we-do-it .card-header h3 {
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+.how-do-we-do-it .card-body .card-text {
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.know-more-btn {
+    background-color: #3f43fd;
+    color: white;
+    border: none;
+    padding: 5px 10px; /* Reduced button size */
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 12px; /* Adjusted font size */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.know-more-btn:hover {
+    background-color: #020710;
+}
+
+/* CSS for What we do? Section */
+.what-we-do-container .card {
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.what-we-do-container .card:hover {
+    height: 450px;
+}
+
+.what-we-do-container .card .imgContainer {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.what-we-do-container .card .imgContainer img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.what-we-do-container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.what-we-do-container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px) {
+    .what-we-do-container .card .imgContainer {
+        left: -2px;
+    }
+}
+
+
+
+

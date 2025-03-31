@@ -1,0 +1,29 @@
+/* .box{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 2px solid black;
+    height: 200px;
+    width: 500px;
+    margin: 30px auto;
+} */
+
+.box {
+    text-align: center;
+    padding: 5vh 5vw;
+    border: 2px solid  #0a0674;
+    border-radius: 50px;
+    height: auto;
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    box-sizing: border-box;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .box {
+        width: 95%;
+        padding: 3vh 3vw;
+    }
+}

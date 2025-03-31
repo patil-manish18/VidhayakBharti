@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #eef2f3;
+}
+
+#navbar, #footer {
+    width: 100%;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    /* color: #8b2626; */
+}
+
+.donation-section {
+    width: 90%;
+    max-width: 700px; /* Increased max-width */
+    text-align: center;
+}
+
+.bank-details {
+    background-color: whitesmoke;
+    padding: 40px; /* Increased padding */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    text-align: left;
+    border: 3px solid #0a0674;
+}
+
+.bank-details h3 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.bank-details p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.bank-details strong {
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    .bank-details {
+        padding: 30px; /* Adjusted padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .bank-details h3 {
+        font-size: 1.2em;
+    }
+
+    .bank-details p {
+        font-size: 0.9em;
+    }
+}

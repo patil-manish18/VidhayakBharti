@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="work.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <!-- How Do we Do It -->
+
+    <section class="timeline_area section_padding_130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-lg-6">
+                    <!-- Section Heading-->
+                    <div class="section_heading text-center mt-3">
+                        <h3><b>How do we do it</b></h3>
+                        <h5>A brief stories of our journey</h5>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <!-- Timeline Area-->
+                    <div class="apland-timeline-area">
+                        <!-- Single Timeline Content-->
+                        <div class="single-timeline-area" onclick="toggleExpand(this)">
+                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s">
+                                <p>System Strengthening </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s">
+                                        <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="timeline-text">
+                                            <h6>Police</h6>
+                                            <p>Trained 2000+ police officials in basic child rights & child-related laws
+                                                with special focus on Juvenile Justice (care & protection of children)
+                                                Act, 2015</p>
+                                            <button class="read-more-btn" onclick="openPopup('content1')">Read
+                                                More</button>
+                                                
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s">
+                                        <div class="timeline-icon"><i class="" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="timeline-text">
+                                            <h6>Judiciary</h6>
+                                            <p>Participate regularly in meetings organised by the High Court Committee for Juvenile Justice (twice a year) </p>
+                                            <button class="read-more-btn" onclick="openPopup('content2')">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s">
+                                        <div class="timeline-icon"><i class="" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="timeline-text">
+                                            <h6>District administration</h6>
+                                            <p>Activated the Department of Women & Child Development to implement the 2014 GR on ‘Ward/ Village Child Protection Committee’. Conducted specialised trainings for the same across Maharashtra.</p>
+                                            <button class="read-more-btn" onclick="openPopup('content3')">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Timeline Content-->
+                        <div class="single-timeline-area" onclick="toggleExpand(this)">
+                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s">
+                                <p>Community based child protection models</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s">
+                                        <div class="timeline-icon"><i class="" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="timeline-text">
+                                            <h6>Child Protection Committees</h6>
+                                            <p>Apart from the activation at the departmental level described above,
+                                                sensitised municipal corporators and village panchayats on the formation
+                                                of the committee</p>
+                                            <button class="read-more-btn" onclick="openPopup('content4')">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s">
+                                        <div class="timeline-icon"><i class="" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="timeline-text">
+                                            <h6>Awareness programs & activities</h6>
+                                            <p>Regularly engage with children in communities, schools through sessions
+                                                on child rights and child protection. Also facilitated tailor made
+                                                programs for teenagers addressing various topics like gender, growing
+                                                up, violence among others</p>
+                                            <button class="read-more-btn" onclick="openPopup('content5')">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s">
+                                        <div class="timeline-icon"><i class="" aria-hidden="true"></i></div>
+                                        <div class="timeline-text">
+                                            <h6>Online resources & engagement</h6>
+                                            <p>A yearlong ‘Child Rights Everyday’ poster campaign and subsequent
+                                                publishing of an E-booklet of the same (110+ posters as of 12th
+                                                September 2020)</p>
+                                            <button class="read-more-btn" onclick="openPopup('content6')">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Timeline Content-->
+                        <div class="single-timeline-area" onclick="toggleExpand(this)">
+                            <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s">
+                                <p>Issue based initiatives</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s">
+                                        <div class="timeline-icon"><i class="" aria-hidden="true"></i></div>
+                                        <div class="timeline-text">
+                                            <h6>Child marriage </h6>
+                                            <p>Actively working in Nandurbar, Solapur and Kolhapur on the issue of child
+                                                marriage which disproportionately affects girls</p>
+                                            <button class="read-more-btn" onclick="openPopup('content6')">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s">
+                                        <div class="timeline-icon"><i class="" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="timeline-text">
+                                            <h6>Child labour</h6>
+                                            <p>Leading a network creation and working group called ‘End Child Labour’
+                                                across 36 districts of Maharashtra of individuals from varied
+                                                backgrounds. This group will actively work against child labour in the
+                                                district and this platform will serve as a collaborative and support
+                                                network.</p>
+                                            <button class="read-more-btn" onclick="openPopup('content8')">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s">
+                                        <div class="timeline-icon"><i class="" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="timeline-text">
+                                            <h6>Safe Migration</h6>
+                                            <p>Migration impacts children in immeasurable ways and unsafe migration
+                                                makes children more vulnerable to child marriage and child labour. We
+                                                are advocating for implementation of policies and schemes that makes
+                                                migration safe for the families and the children</p>
+                                            <button class="read-more-btn" onclick="openPopup('content9')">Read
+                                                More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popup Modal -->
+            <div id="popup-modal" class="popup-modal">
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <div id="popup-text"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Add this section at the end of your HTML, inside the body tag -->
+    <div id="content1" style="display: none;">
+        <h4 class="text-justify"><b>Police</b></h4>
+        <p class="text-justify">
+        <ol>
+            <li>Trained 2000+ police officials in basic child rights & child related laws with special focus on Juvenile
+                Justice (care & protection of children) Act, 2015</li>
+            <li>Since 2017, we have been working on a special, dedicated initiative called “Child Friendly Police”. We
+                are working with 6 city and 2 railway police stations closely to understand the on-ground reality,
+                provide technical support in cases and improve their community programs with children</li>
+            <li>Advocacy with the police department for changes to better address children’s issues. Conducted research
+                with over 550 respondents on police’s basic knowledge on child protection.</li>
+            <li>Created accessible resources in Marathi for the police (8 flyers & 1 comprehensive booklet). Improving
+                police training academy curriculum on child related laws. Evolving and developing ‘Child Friendly Police
+                Indicators’ with police and other experts from the field.</li>
+            <li>Facilitating convergences between police and other departments for better functioning</li>
+        </ol>
+        </p>
+    </div>
+
+
+    <div id="content2" style="display: none;">
+        <h2 class="text-justify"><b>Judiciary</b></h2>
+        <p class="text-justify">
+        <ol>
+            <li>Conduct regular trainings at the Maharashtra Judicial Academy for first class judicial magistrates on
+                child rights, child protection with special focus on role of the magistrate as a Juvenile Justice Board
+                member</li>
+            <li>Participate regularly in meetings organised by the High Court Committee for Juvenile Justice (twice a
+                year)</li>
+            <li>In 2018, presented on Role of Police in strengthening Juvenile Justice Systems in Maharashtra along with
+                ADG Dr. Pradnya Sarvoday in a conference organised by the JJC (Juvenile Justice Monitoring Committee).
+            </li>
+            <li>The Child Welfare Committee is the competent authority to make decisions regarding children in need of
+                care & protection at a district level. They function as a bench of magistrates. We regularly conduct
+                orientation and refresher courses for CWC members at Yashada and other departmental training.</li>
+            <li>Appointed as member of the Covid-19 taskforce.</li>
+        </ol>
+        </p>
+    </div>
+
+    <div id="content3" style="display: none;">
+        <h2 class="text-justify"><b>District Administration</b></h2>
+        <p class="text-justify">
+        <ol>
+            <li>Trained 1100+ stakeholders like the District Child Protection Unit (DCPU), District Legal Services
+                Authority (DLSA), ICDS Supervisors, Anganwadi workers, Superintendents & staff of Child Care
+                Institutions (CCI), ASHA workers, police patils, Bal Rakshaks (appointed by Education Department)</li>
+            <li>Activated the Department of Women & Child Development to implement the 2014 GR on ‘Ward/ Village Child
+                Protection Committee’. Conducted specialised trainings for the same across Maharashtra.</li>
+            <li>Implementing an online intensive training program since April 2020 for all district administration
+                stakeholders (14 weeks so far) that started with session on Covid-19 & lockdown measures for child
+                protection.</li>
+        </ol>
+        </p>
+    </div>
+
+    <div id="content4" style="display: none;">
+        <h2 class="text-justify"><b>Child Protection Committees</b></h2>
+        <p class="text-justify">
+        <ol>
+            <li>Apart from the activation at the departmental level described above, sensitised municipal corporators
+                and village panchayats on the formation of the committee</li>
+            <li>Directly facilitated formation and activation of CPCs in Dhadgaon block, Nandurbar. Mentored formation
+                of CPC in other districts of Maharashtra</li>
+            <li>Released two booklets on CPC in Marathi. The first booklet was adopted and endorsed by the DWCD. The
+                recent one has been launched in partnership with CRY.</li>
+            <li>Conducted online lectures on CPC, which can be accessed <a
+                    href="https://www.vidhayakbharti.org/village-ward-child-protection-committee-cpc/"
+                    target="_blank">here</a>.</li>
+        </ol>
+        </p>
+    </div>
+
+    <div id="content5" style="display: none;">
+        <h2 class="text-justify"><b>Awareness programs & activities</b></h2>
+        <p class="text-justify">
+        <ol>
+            <li>Regularly engage with children in communities, schools through sessions on child rights and child
+                protection. Also facilitated tailor-made programs for teenagers addressing various topics like gender,
+                growing up, violence among others.</li>
+            <li>Regularly engage with parents on child participation, corporal punishment through community meetings,
+                PTA meetings.</li>
+            <li>Train teachers on their role in child protection, legal provisions.</li>
+            <li>Conduct awareness & capacity building sessions for youth, law students, other civil society
+                organizations like Childline, Akanksha Foundation, Cactus Foundation to name a few.</li>
+        </ol>
+        </p>
+    </div>
+
+    <div id="content6" style="display: none;">
+        <h2 class="text-justify"><b>Online resources & engagement</b></h2>
+        <p class="text-justify">
+        <ol>
+            <li>A yearlong ‘Child Rights Everyday’ poster campaign and subsequent publishing of an E-booklet of the same
+                (110+ posters as of 12th September 2020). View: <a
+                    href="https://www.vidhayakbharti.org/learning-child-protection-through-law-campaign/"
+                    target="_blank">Child Rights Everyday Campaign</a>.</li>
+            <li>40+ Facebook Live sessions since April 2020 held bi-weekly with in-house and guest speakers. Covered a
+                wide range of topics from child protection, online safety, gender & sexuality to nutrition. View: <a
+                    href="https://www.vidhayakbharti.org/children-covid-19-lockdown-facebook-live-series-by-vidhayak-bharti/"
+                    target="_blank">Facebook Live Sessions</a>.</li>
+            <li>Past resources created (flyers, booklets, posters) can be viewed here: <a
+                    href="https://www.vidhayakbharti.org/resources/" target="_blank">Past Resources</a>.</li>
+        </ol>
+        </p>
+    </div>
+
+    <div id="content7" style="display: none;">
+        <h2 class="text-justify"><b>Child marriage & gender-based discrimination</b></h2>
+        <p class="text-justify">
+        <ol>
+            <li>Actively working in Nandurbar, Solapur, and Kolhapur on the issue of child marriage which
+                disproportionately affects girls.</li>
+            <li>Formed Adolescent groups in Dhadgaon block where girls are taught life skills, leadership with a focus
+                on confidence and exercising agency. A safe space where they can openly share their issues.</li>
+            <li>Targeted awareness campaigns against child marriage during festival seasons in the tribal hamlets to
+                engage with parents and community leaders to discourage them from marrying their girls early.</li>
+            <li>Liaising with the Collector, Education Department, Child Marriage Prohibition Officer, local police,
+                police patils, anganwadi workers, ASHA workers to actively create a safety network to ensure school
+                completion and preventing child marriages.</li>
+        </ol>
+        </p>
+    </div>
+
+    <div id="content8" style="display: none;">
+        <h2 class="text-justify"><b>Child labour</b></h2>
+        <p class="text-justify">
+        <ol>
+            <li>Leading a network creation and working group called ‘End Child Labour’ across 36 districts of
+                Maharashtra of individuals from varied backgrounds. This group will actively work against child labour
+                in the district and this platform will serve as a collaborative and support network.</li>
+            <li>5 public and 1 closed group meetings have been conducted so far with 91 participants in the final group.
+                The group has been created considering the heightened risk of child labour due to the pandemic and a
+                foreseeable need to have a multi-stakeholder, cross-cutting network.</li>
+        </ol>
+        </p>
+    </div>
+
+    <div id="content9" style="display: none;">
+        <h2 class="text-justify"><b>Safe Migration</b></h2>
+        <p class="text-justify">
+            <ol>
+                <li>Migration impacts children in immeasurable ways and unsafe migration makes children more vulnerable to child marriage and child labour.</li>
+                <li>We are advocating for implementation of policies and schemes that make migration safe for families and children.</li>
+            </ol>
+        </p>
+    </div>
+    
+
+
+    <!-- footer -->
+    <div id="footer"></div>
+
+<!-- new script from deepseek -->
+    <script>
+        // Function to open popup with specific content
+        function openPopup(contentId, event) {
+            if (event) {
+                event.stopPropagation();
+                event.preventDefault();
+            }
+            document.querySelector('.navbar-custom-z').style.zIndex = '0';
+            document.getElementById('popup-text').innerHTML = document.getElementById(contentId).innerHTML;
+            document.getElementById('popup-modal').style.display = 'block';
+            document.body.classList.add('body-no-scroll'); // Prevent scrolling
+        }
+    
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById('popup-modal').style.display = 'none';
+            document.body.classList.remove('body-no-scroll'); // Re-enable scrolling
+            document.querySelector('.navbar-custom-z').style.zIndex = '3';
+        }
+    
+        // Function to toggle expanding of timeline content
+        function toggleExpand(element) {
+            document.querySelectorAll('.single-timeline-area').forEach(item => {
+                if (item !== element) {
+                    item.classList.remove('expanded');
+                }
+            });
+            element.classList.toggle('expanded');
+        }
+    
+        // Close popup if user clicks outside of the popup content
+        window.onclick = function(event) {
+            if (event.target === document.getElementById('popup-modal')) {
+                closePopup();
+            }
+        }
+    
+        // Navbar and Footer loading with enhanced dropdown handling
+        function loadNavbar() {
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                    attachDropdownEventListeners();
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        }
+    
+        function attachDropdownEventListeners() {
+            const dropdownButtons = document.querySelectorAll('.dropdown-btn');
+            let activeDropdown = null;
+    
+            dropdownButtons.forEach((button) => {
+                button.addEventListener('click', (e) => {
+                    if (window.matchMedia('(max-width: 1100px)').matches) {
+                        e.preventDefault();
+                        const dropdownId = button.getAttribute('data-dropdown');
+                        const dropdown = document.getElementById(dropdownId);
+                        
+                        if (activeDropdown && activeDropdown !== dropdown) {
+                            activeDropdown.classList.remove('active');
+                        }
+                        
+                        dropdown.classList.toggle('active');
+                        activeDropdown = dropdown.classList.contains('active') ? dropdown : null;
+                        
+                        // Rotate icon
+                        const icon = button.querySelector('i');
+                        if (icon) {
+                            icon.style.transform = dropdown.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+                        }
+                    }
+                });
+            });
+    
+            // Desktop hover
+            dropdownButtons.forEach(btn => {
+                btn.addEventListener('mouseenter', function() {
+                    if (window.matchMedia('(min-width: 1101px)').matches) {
+                        closeAllDropdowns();
+                        const dropdown = document.getElementById(this.dataset.dropdown);
+                        dropdown.classList.add('active');
+                        this.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+    
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.dropdown') && !e.target.closest('.dropdown-btn')) {
+                    closeAllDropdowns();
+                }
+            });
+    
+            const hamburger = document.getElementById('hamburger');
+            const menu = document.querySelector('.menu');
+    
+            hamburger.addEventListener('click', () => {
+                const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+                hamburger.setAttribute('aria-expanded', !isExpanded);
+                menu.classList.toggle('active');
+                document.body.classList.toggle('body-no-scroll');
+            });
+        }
+    
+        function closeAllDropdowns() {
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+            document.querySelectorAll('.dropdown-btn').forEach(btn => {
+                btn.setAttribute('aria-expanded', 'false');
+                const icon = btn.querySelector('i');
+                if (icon) {
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        }
+    
+        function loadFooter() {
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        }
+    
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            loadNavbar();
+            loadFooter();
+            
+            // Close popup when pressing Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && document.getElementById('popup-modal').style.display === 'block') {
+                    closePopup();
+                }
+            });
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl4R0OXo1rQmkHxMCb2zq4TX0j5dxqot1J7N6aB9rJrG8ljLQq7T9UJ0Z65"
+        crossorigin="anonymous"></script> -->
+
+</body>
+</html>

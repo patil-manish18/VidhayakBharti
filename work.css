@@ -1,0 +1,234 @@
+
+/* old working  */
+body {
+    margin-top: 20px;
+}
+
+.timeline_area {
+    position: relative;
+    z-index: 1;
+}
+
+.single-timeline-area {
+    position: relative;
+    z-index: 1;
+    padding-left: 180px;
+}
+
+@media only screen and (max-width: 575px) {
+    .single-timeline-area {
+        padding-left: 20px; 
+    }
+}
+
+.single-timeline-area .timeline-date {
+    position: absolute;
+    width: 180px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 60px;
+}
+
+@media only screen and (max-width: 575px) {
+    .single-timeline-area .timeline-date {
+        width: auto; 
+        position: relative; 
+        padding-right: 0; 
+        justify-content: flex-start; 
+    }
+}
+
+.single-timeline-area .timeline-date::after {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    content: "";
+    background-color: #ebebeb;
+    top: 0;
+    right: 30px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 575px) {
+    .single-timeline-area .timeline-date::after {
+        right: auto;
+        left: 0;
+        top: 30px; 
+        height: auto; 
+        width: 100%; 
+    }
+}
+
+.single-timeline-area .timeline-date::before {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #f1c40f;
+    content: "";
+    top: 50%;
+    right: 26px;
+    z-index: 5;
+    margin-top: -5.5px;
+}
+
+@media only screen and (max-width: 575px) {
+    .single-timeline-area .timeline-date::before {
+        top: 30px; 
+        left: 0; 
+        right: auto;
+        margin-top: 0; 
+    }
+}
+
+.single-timeline-area .timeline-date p {
+    margin-bottom: 0;
+    color: #020710;
+    font-size: 14px; 
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.single-timeline-area .single-timeline-content {
+    position: relative;
+    z-index: 1;
+    padding: 30px 30px 25px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+    border: 1px solid #ebebeb;
+    transition: all 0.5s ease;
+    height: 250px; 
+    width: 100%; 
+    overflow: hidden; 
+}
+
+@media only screen and (max-width: 575px) {
+    .single-timeline-area .single-timeline-content {
+        padding: 20px;
+        height: auto; 
+    }
+}
+
+.single-timeline-area .single-timeline-content .timeline-icon {
+    transition-duration: 500ms;
+    width: 30px;
+    height: 30px;
+    background-color: #f1c40f;
+    flex: 0 0 30px;
+    text-align: center;
+    max-width: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.single-timeline-area .single-timeline-content .timeline-icon i {
+    color: #ffffff;
+    line-height: 30px;
+}
+
+.single-timeline-area .single-timeline-content .timeline-text h6 {
+    transition-duration: 500ms;
+    font-size: 16px; 
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    max-height: 24px; 
+}
+
+.single-timeline-area .single-timeline-content .timeline-text p {
+    font-size: 14px; 
+    margin-bottom: 0;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 4; 
+    -webkit-box-orient: vertical;
+    max-height: 80px; 
+}
+
+.single-timeline-area .single-timeline-content:hover .timeline-icon,
+.single-timeline-area .single-timeline-content:focus .timeline-icon {
+    background-color: #020710;
+}
+
+.single-timeline-area .single-timeline-content:hover .timeline-text h6,
+.single-timeline-area .single-timeline-content:focus .timeline-text h6 {
+    color: #3f43fd;
+}
+
+.read-more-btn {
+    background-color: #3f43fd;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.read-more-btn:hover {
+    background-color: #020710;
+}
+
+.popup-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    z-index: 999;
+    position: relative; 
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text-justify {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .text-justify {
+        text-align: center; 
+    }
+} 
+
+
+
+
+

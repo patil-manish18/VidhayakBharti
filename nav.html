@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="nav.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Navigation Bar with Dropdown Menu</title>
+  </head>
+  <body>
+    <header id="nav-menu" aria-label="navigation bar">
+      <div class="navcontainer">
+        <div class="nav-start">
+          <a class="logo" href="home.html">
+            <img
+              src="/assets/images/logo.png"
+              class="logo-image"
+              alt="Logo"
+            />
+          </a>
+          <nav class="menu navbar-custom-z">
+            <ul class="menu-bar">
+              <li><a class="nav-link" href="home.html">Home</a></li>
+              <li><a class="nav-link" href="about.html">About Us</a></li>
+              <li>
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown1"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="resources"
+                >
+                  Resources
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown1" class="dropdown">
+                  <ul role="menu">
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="legalR.html">Legal Resources</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="VibhaR.html">Vibha Resources</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown2"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="blog"
+                >
+                  Blog
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown2" class="dropdown">
+                  <ul role="menu">
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="Articles.html">Articles</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="post.html">Post</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown3"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="join us"
+                >
+                  Join Us
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown3" class="dropdown">
+                  <ul role="menu">
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="Volunteer.html">Volunteer</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="Donate.html">Donate</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-end">
+          <button class="btn btn-primary" onclick="window.location.href='donate.html'">Donate</button>
+          <button
+            id="hamburger"
+            aria-label="hamburger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <script src="nav.js"></script>
+  </body>
+</html>
+
+
+
+
+
