@@ -205,5 +205,5 @@ body::before {
     width: 100%;
     height: 100%;
     background: radial-gradient(circle at 10% 20%, rgba(52, 152, 219, 0.05) 0%, rgba(155, 89, 182, 0.05) 90%);
-    z-index: -1;
+    z-index: 0;
 }
